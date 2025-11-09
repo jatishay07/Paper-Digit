@@ -1,4 +1,4 @@
-# 🧠 Paper Digit
+# Paper Digit
 
 A computer vision algorithm used to detect single numbers, combined with a **custom-built Neural Network** trained on the **MNIST dataset** to identify and predict digits shown through a webcam feed.  
 
@@ -6,7 +6,7 @@ The project integrates **OpenCV** for real-time detection and preprocessing with
 
 ---
 
-## 🚀 Features
+## Features
 - **Real-time digit detection** using OpenCV  
 - **Neural Network trained on MNIST** for number recognition  
 - **Human feedback loop** — capture, label, and grow your dataset interactively  
@@ -15,7 +15,7 @@ The project integrates **OpenCV** for real-time detection and preprocessing with
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 ```
 paper-digit/
 ├── captures/                 # Temporary captures (ignored in Git)
@@ -32,7 +32,7 @@ paper-digit/
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 - **Python 3.10+**
 - **OpenCV** — for video capture and preprocessing  
 - **NumPy** — for matrix operations and neural network logic  
@@ -41,14 +41,14 @@ paper-digit/
 
 ---
 
-## 🧪 How to Run
+## How to Run
 
-### 1️⃣ Install dependencies
+### Install dependencies
 ```bash
 pip install opencv-python numpy pandas matplotlib
 ```
 
-### 2️⃣ Run the webcam digit detector
+### Run the webcam digit detector
 ```bash
 python scr/model/webcam.py
 ```
@@ -60,7 +60,7 @@ python scr/model/webcam.py
   custom_digits/<digit>/
   ```
 
-### 3️⃣ Retrain the model
+### Retrain the model
 After collecting 100–200 labeled samples:
 ```bash
 python scr/model/train.py
@@ -69,7 +69,7 @@ This retrains the network using both **MNIST** and your **custom digits**.
 
 ---
 
-## 🧠 Model Overview
+## Model Overview
 - Input: 28×28 grayscale images  
 - Hidden layers: Configurable in `config.py`  
 - Activation: Sigmoid / ReLU  
@@ -79,7 +79,7 @@ This retrains the network using both **MNIST** and your **custom digits**.
 
 ---
 
-## 📸 Workflow
+## Workflow
 1. The webcam captures an image.  
 2. OpenCV finds the region of interest (ROI) containing the digit.  
 3. The ROI is preprocessed (grayscale, resized, normalized).  
@@ -88,7 +88,7 @@ This retrains the network using both **MNIST** and your **custom digits**.
 
 ---
 
-## 🧱 Future Enhancements
+## Future Enhancements
 - Add a **“none” class** to ignore non-digit frames  
 - Implement **continuous learning / retraining loop**  
 - Integrate **CNN layers** for improved accuracy  
@@ -96,12 +96,11 @@ This retrains the network using both **MNIST** and your **custom digits**.
 
 ---
 
-## 📜 License
+## License
 MIT License © 2025 **Atishay Jain**
 
 ---
 
-## 👤 Author
+## Author
 **Atishay Jain**  
-🎓 University of Texas at Austin — Mechanical Engineering + Computer Science  
-🌐 [GitHub Profile](https://github.com/yourusername)
+University of Texas at Austin — Mechanical Engineering + Programming and Computation Certificate + Computational Science and Engineering Certficate
